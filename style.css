@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sideNav {
+    position: fixed;
+    width: 24%;
+    height: 100vh;
+    background-color: rgb(44, 255, 7);
+}
+
+.content {
+    margin-left: 24%;
+    padding-top: 80px;
+    display: flex;
+    gap: 80px;
+}
+
+.title {
+    display: flex;
+    color: white;
+    font-size: 1.0em;
+    margin-top: 40%;
+    gap: 8px;
+    margin-left: 30px;
+}
+
+.title i {
+    font-size: 1.6em;
+    padding-top: 5px;
+}
+
+.title2 {
+    display: flex;
+    color: white;
+    font-size: 1.0em;
+    margin-top: 28px;
+    gap: 8px;
+    margin-left: 30px;
+}
+
+.title2 i {
+    font-size: 1.6em;
+    padding-top: 5px;
+}
+
+.box {
+    background-color: rgb(255, 0, 166);
+    width: 260px;
+    height: 120px;
+    border-radius: 30px;
+    color: white;
+    font-size: 2.6em;
+    text-align: center;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.box::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background-color: rgb(76, 18, 130);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 1s ease-in-out;
+
+
+}
+.box:hover::after{
+    width: 100%;
+}
+
+.charts{
+    margin-left: 24%;
+}
+
+.circle{
+    display: flex;
+    margin-top: 180px;
+    gap: 40px;
+}
+
+color{
+    background-color: red;
+    width: 40px;
+    height: 20px;
+    border: 8px;
+    margin-top: 8px;
+}
+
+.color{
+
+}
+
+.paid{
+    width: 400px;
+    height: 400px;
+    background: conic-gradient(
+        red 0% 14%,
+        yellow 14% 57%,
+        blue 57% 72%,
+        green 72% 100%
+    );
+    border-radius: 59%;
+    margin-left: 18%;
+    margin-top: 50px;
+}
